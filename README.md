@@ -4,7 +4,7 @@ How to change the `ServerName` on a PHPCake5 application running `php:8.2-apache
 
 # Steps to Change ServerName
 
-# 1. Configure `my-httpd.conf`
+1. Configure `my-httpd.conf`
 
 Configure your `my-httpd.conf` in the root directory with the domain of your choice. For example:
 
@@ -14,7 +14,7 @@ Configure your `my-httpd.conf` in the root directory with the domain of your cho
 </VirtualHost>
 ```
 
-# 2. Start Application and Agent Containers
+2. Start Application and Agent Containers
 
 Start the application and agent with the following with:
 
@@ -22,7 +22,7 @@ Start the application and agent with the following with:
 docker-compose build && docker-compose up -d
 ```
 
-# 3. Assign `dummy-host.example.com` to your Localhost
+3. Assign `dummy-host.example.com` to your Localhost
 
 Edit your hosts file to assign `dummy-host.example.com` to your localhost:
 
@@ -38,7 +38,7 @@ Add the following line to the file:
 
 Save the configuration by pressing `CTRL + O`, then `ENTER`, and exit by pressing `CTRL + X`.
 
-# 4. Navigate to Endpoints
+4. Navigate to Endpoints
 
 Navigate to the following endpoints in your browser:
 
@@ -48,27 +48,27 @@ Navigate to the following endpoints in your browser:
 
 # Examples
 
-# 1. Hello World
+1. Hello World
 
 Access the "Hello World" page:
 [http://dummy-host.example.com:8081/hello-world](http://dummy-host.example.com:8081/hello-world)
 
 ![Hello World](./images/helloWorld.png)
 
-# 2. Hello Order
+2. Hello Order
 
 Access the "Hello Order" page:
 [http://dummy-host.example.com:8081/hello-Order](http://dummy-host.example.com:8081/hello-Order)
 
 ![Hello Order](./images/HelloOrder.png)
 
-# 3. Posts API
+3. Posts API
 
 Access the "Posts API" page:
 [http://dummy-host.example.com:8081/post](http://dummy-host.example.com:8081/post)
 
 ![Posts API](./images/post.png)
 
-# 5. Check Your Traces
+5. Check Your Traces
 
-Check your traces, especially the span tag `http.url`, to verify the configuration.
+Check your traces, especially the span tag `http.url`, to verify the ServerName was set.
