@@ -46,7 +46,7 @@ Navigate to the following endpoints in your browser:
 -   http://localhost:8081/hello-Order
 -   http://localhost:8081/post
 
-# Examples
+# Examples endpoints
 
 1. Hello World
 
@@ -69,6 +69,6 @@ Access the "Posts API" page:
 
 ![Posts API](./images/post.png)
 
-5. Check Your Traces
+5. Check your Traces
 
 Check your traces, especially the span tag `http.url`, to verify the ServerName was set.
