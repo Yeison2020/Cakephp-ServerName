@@ -1,10 +1,10 @@
-# PHPCake Application Configuration
+# PHPCake Application
 
-This guide provides steps to change the `ServerName` on a PHPCake application running `php:8.2-apache` and `dd-trace-php 0.99.1`.
+This guide provides steps to change the `ServerName` on a PHPCake application running `php:8.2-apache`
 
 ## Steps to Change ServerName
 
-### 1. Configure `my-httpd.conf`
+## 1. Configure `my-httpd.conf`
 
 Configure your `my-httpd.conf` in the root directory with the domain of your choice. For example:
 
@@ -14,15 +14,15 @@ Configure your `my-httpd.conf` in the root directory with the domain of your cho
 </VirtualHost>
 ```
 
-### 2. Start Application and Agent Containers
+## 2. Start Application and Agent Containers
 
-Start the application and agent containers with the following commands:
+Start the application and agent with the following with:
 
 ```sh
 docker-compose build && docker-compose up -d
 ```
 
-### 3. Assign `dummy-host.example.com` to Your Localhost
+## 3. Assign `dummy-host.example.com` to your Localhost
 
 Edit your hosts file to assign `dummy-host.example.com` to your localhost:
 
@@ -38,19 +38,19 @@ Add the following line to the file:
 
 Save the configuration by pressing `CTRL + O`, then `ENTER`, and exit by pressing `CTRL + X`.
 
-### 4. Navigate to Endpoints
+## 4. Navigate to Endpoints
 
 Navigate to the following endpoints in your browser:
 
-- http://localhost:8081/hello-world
-- http://localhost:8081/hello-Order
+-   http://localhost:8081/hello-world
+-   http://localhost:8081/hello-Order
 
 Note: You will need to replace `localhost` with `dummy-host.example.com`. For example:
 
-- http://dummy-host.example.com/hello-world
-- http://dummy-host.example.com/hello-Order
+-   http://dummy-host.example.com/hello-world
+-   http://dummy-host.example.com/hello-Order
 
-### 5. Check Your Traces
+## 5. Check Your Traces
 
 Check your traces, especially the span tag `http.url`, to verify the configuration.
 
@@ -102,5 +102,3 @@ Here is a step-by-step example of the entire process:
 5. **Check Your Traces:**
 
     In your application monitoring tool, verify that the `http.url` span tag reflects the correct URLs.
-
-Following these steps will help you successfully change the `ServerName` on your PHPCake application running `php:8.2-apache` and `dd-trace-php 0.99.1`.
