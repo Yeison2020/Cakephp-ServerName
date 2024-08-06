@@ -46,13 +46,25 @@ Navigate to the following endpoints in your browser:
 -   http://localhost:8081/hello-Order
 -   http://localhost:8081/post
 
-Note: You will need to replace `localhost` with `dummy-host.example.com`. For example:
+## Examples
 
--   http://dummy-host.example.com:8081/hello-world ![Hello World](./images/HelloWorld.png)
+## 1. Hello World
+Access the "Hello World" page:
+[http://dummy-host.example.com:8081/hello-world](http://dummy-host.example.com:8081/hello-world)
 
--   http://dummy-host.example.com:8081/hello-Order ![Hello Order](./images/HelloOrder.png)
+![Hello World](./images/helloWorld.png)
 
--   http://dummy-host.example.com:8081/post ![Posts API](./images/post.png)
+## 2. Hello Order
+Access the "Hello Order" page:
+[http://dummy-host.example.com:8081/hello-Order](http://dummy-host.example.com:8081/hello-Order)
+
+![Hello Order](./images/HelloOrder.png)
+
+## 3. Posts API
+Access the "Posts API" page:
+[http://dummy-host.example.com:8081/post](http://dummy-host.example.com:8081/post)
+
+![Posts API](./images/post.png)
 
 ## 5. Check Your Traces
 
