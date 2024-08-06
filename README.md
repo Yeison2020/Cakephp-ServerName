@@ -69,6 +69,4 @@ Access the "Posts API" page:
 
 ![Posts API](./images/post.png)
 
-5. Check your Traces
-
 Check your traces, especially the span tag `http.url`, to verify the ServerName was set.
