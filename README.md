@@ -40,13 +40,13 @@ Save the configuration by pressing `CTRL + O`, then `ENTER`, and exit by pressin
 
 4. Navigate to Endpoints
 
-Navigate to the following endpoints in your browser:
+Navigate to the following endpoints in your browser to ensure the app is running:
 
 -   http://localhost:8081/hello-world
 -   http://localhost:8081/hello-Order
 -   http://localhost:8081/post
 
-# Examples endpoints
+# Now use the ServerName you set - Examples endpoints
 
 1. Hello World
 

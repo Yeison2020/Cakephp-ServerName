@@ -1,0 +1,70 @@
+2024-07-19 12:13:51 error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [2002] No such file or directory in /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver.php on line 192
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [2002] No such file or directory',
+)
+Stack Trace:
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:151
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:51
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:179
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Connection.php:362
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/bake/src/Command/ModelCommand.php:92
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/BaseCommand.php:192
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/CommandRunner.php:327
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/CommandRunner.php:168
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/bin/cake.php:10
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver.php on line 181
+Stack Trace:
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver.php:181
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:71
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver.php:190
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:151
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:51
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:179
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Connection.php:362
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/bake/src/Command/ModelCommand.php:92
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/BaseCommand.php:192
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/CommandRunner.php:327
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/CommandRunner.php:168
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/bin/cake.php:10
+- [main]:
+
+2024-07-19 12:14:06 error: [Cake\Database\Exception\MissingConnectionException] Connection to Mysql could not be established: SQLSTATE[HY000] [2002] No such file or directory in /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver.php on line 192
+Exception Attributes: array (
+  'driver' => 'Mysql',
+  'reason' => 'SQLSTATE[HY000] [2002] No such file or directory',
+)
+Stack Trace:
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:151
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:51
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:179
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Connection.php:362
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/bake/src/Command/ModelCommand.php:92
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/BaseCommand.php:192
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/CommandRunner.php:327
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/CommandRunner.php:168
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/bin/cake.php:10
+- [main]:
+
+Caused by: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver.php on line 181
+Stack Trace:
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver.php:181
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:71
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver.php:190
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:151
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Schema/SchemaDialect.php:51
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php:179
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:53
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Database/Connection.php:362
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/bake/src/Command/ModelCommand.php:92
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/BaseCommand.php:192
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/CommandRunner.php:327
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Console/CommandRunner.php:168
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/bin/cake.php:10
+- [main]:
+

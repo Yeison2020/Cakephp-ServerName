@@ -1,0 +1,62 @@
+2024-07-19 12:12:49 error: [Cake\Http\Exception\MissingControllerException] Controller class `Order` could not be found. in /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Order',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:69
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Server.php:103
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/webroot/index.php:37
+- [main]:
+
+Request URL: /order
+2024-07-19 12:13:01 error: [Cake\ORM\Exception\MissingTableClassException] Table class for alias `Orders` could not be found. in /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php on line 250
+Exception Attributes: array (
+  0 => 'for alias `Orders`',
+)
+Stack Trace:
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Datasource/Locator/AbstractLocator.php:68
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:212
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/ORM/Locator/LocatorAwareTrait.php:96
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Controller/Controller.php:299
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/src/Controller/OrdersController.php:19
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Controller/Controller.php:498
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:139
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:114
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/BaseApplication.php:332
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:69
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/vendor/cakephp/cakephp/src/Http/Server.php:103
+- /Users/yeison.casado/sandbox/repro/APMS-12666/v2-test/testing-cake/orders/webroot/index.php:37
+- [main]:
+
+Request URL: /orders
